@@ -1,15 +1,29 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bruce Charron's blog site",
+  "main": "server.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucee63/blog.git"
   },
   "author": "Bruce Charron",
   "license": "ISC",
-  "homepage": "https://brucee63@github.io/blog",
+  "bugs": {
+    "url": "https://github.com/brucee63/blog/issues"
+  },
+  "homepage": "https://github.com/brucee63/blog#readme",
   "dependencies": {
-    "gh-pages": "^3.1.0"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2"
   }
 }
